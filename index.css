@@ -1,0 +1,221 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #eee;
+	font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.container {
+	padding: 3rem;
+	font-size: 1rem;
+	max-width: 900px;
+	margin: 0 auto;
+	background-color: white;
+	display: grid;
+	align-content: start;
+	gap: 3rem;
+}
+
+.logo {
+	width: 200px;
+	height: 50px;
+	margin: 0;
+}
+
+.logo img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.title__container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.title {
+	color: red;
+	font-weight: bold;
+	font-size: 1.75rem;
+	text-align: center;
+}
+
+.title__cell-container {
+	width: 40%;
+	display: flex;
+	border: 1px solid #000;
+	justify-content: center;
+}
+
+.title__cell {
+	align-self: stretch;
+	padding: 0.5rem;
+}
+
+.paragraph {
+	color: #7e7e7e;
+	line-height: 1.5;
+}
+
+.input-group {
+	width: 100%;
+	display: grid;
+	align-content: start;
+	gap: 1rem;
+}
+
+.input {
+	padding: 1rem;
+	font-size: 1rem;
+}
+
+.input::placeholder {
+	font-style: italic;
+}
+
+.button-group {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.button {
+	margin-left: 1rem;
+	background: none;
+	border-style: solid;
+	border-color: transparent;
+	border-width: 1px;
+	padding: 1rem 3rem;
+	border-radius: 0.5rem;
+	font-size: 1rem;
+	font-weight: 500;
+}
+
+.button--outlined {
+	border-color: #000;
+	color: #000;
+}
+
+.button--contained {
+	border-color: red;
+	color: white;
+	background-color: red;
+}
+
+.social {
+	background-color: red;
+	padding: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.social__icons {
+	display: flex;
+	align-items: center;
+}
+
+.social__icon {
+	margin-right: 1.5rem;
+	color: white;
+	font-size: 1.3rem;
+}
+
+.website {
+	color: white;
+	font-weight: bold;
+	font-size: 1rem;
+}
+
+.footer {
+	width: 100%;
+	font-size: 0.8rem;
+	line-height: 2;
+}
+
+.footer__company {
+	font-weight: bold;
+}
+
+.rating-container {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.rating {
+	flex: 1;
+	background-color: transparent; /* Green */
+	border: none;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 0.75rem;
+	margin-bottom: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-self: stretch;
+}
+
+@media screen and (max-width: 768px) {
+	.rating {
+		max-width: 100px;
+	}
+}
+
+.rating__icon {
+	height: 100px;
+	width: 100px;
+	margin-bottom: 1rem;
+}
+
+.rating__icon img {
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+}
+
+.rating__text-container {
+	width: 90%;
+	position: relative;
+	background-color: #eee;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 60px;
+}
+
+.rating__text {
+	font-size: 0.75rem;
+	font-weight: 600;
+}
+
+.rating__text-number {
+	position: absolute;
+	top: 0%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: red;
+	border-radius: 50%;
+	height: 1.2rem;
+	width: 1.2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
